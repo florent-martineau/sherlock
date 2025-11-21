@@ -1,11 +1,6 @@
 name: CI
 
-on: [push, pull_request]
-
-# To avoid having several times the CI running at the same time
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+on: [pull_request]
 
 jobs:
   test:
