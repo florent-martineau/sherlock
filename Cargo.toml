@@ -4,5 +4,4 @@ version = "0.0.1"
 edition = "2024"
 
 [dependencies]
-tokio = { version = "1.48.0", features = ["full"] }
-turso = "0.3.2"
+libsql = "0.9.29"
